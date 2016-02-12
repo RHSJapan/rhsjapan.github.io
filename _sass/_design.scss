@@ -1,2 +1,21 @@
+html{overflow-y:scroll;}
+::-webkit-scrollbar{width:0.85rem;}
+::-webkit-scrollbar-track-piece{background:rgba($outerspace, 0.4);}
+.site-header {
+    border-bottom: 0.1rem solid $outerspace;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    background: $cosmiccobalt;
+    .container {
+        max-width: 1280px;
+    }
+    a {
+        padding: 1rem;
+        display: inline-block;
+        &:hover {
+            background: $mulberry;
+        }
+    }
 
+}
 
