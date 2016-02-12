@@ -1,8 +1,10 @@
 title: RHS Japan Club
 email: roswelljapan@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Roswell High's Japan Club is an activity-based club that explores
   Japan's cultural background through crafts, cuisine, and public media.
+short: Immerse yourself in Japanese culture
+permalink: "/:title/"
 baseurl: ""
 url: "https://rhsjapan.com"
 
