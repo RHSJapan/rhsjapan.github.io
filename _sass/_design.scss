@@ -9,6 +9,8 @@ a {
     }
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+
 html{overflow-y:scroll;}
 ::-webkit-scrollbar{width:0.85rem;}
 ::-webkit-scrollbar-track-piece{background:rgba($outerspace, 0.4);}
