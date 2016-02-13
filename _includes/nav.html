@@ -4,11 +4,11 @@
       <nav class="site-nav">
         <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         <span class="u-pull-right">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-          {% endfor %}
+          {% for my_page in site.pages %}<!--
+            -->{% if my_page.title %}<!--
+            --><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a><!--
+            -->{% endif %}<!--
+          -->{% endfor %}
         </span>
       </nav>
     </div>
