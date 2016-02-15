@@ -2,11 +2,12 @@
   <div class="container">
     <div class="row">
       <nav class="site-nav">
-        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% include logo.html %}
         <span class="u-pull-right">
-          {% for my_page in site.pages %}<!--
+          {% assign sorted_pages = site.pages | sort:"name" %}
+          {% for my_page in sorted_pages %}<!--
             -->{% if my_page.title %}<!--
-            --><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a><!--
+            --><a href="{{ my_page.url | prepend: site.baseurl }}" {% if my_page.cta %}class = "cta"{% endif %}>{{ my_page.title }}</a><!--
             -->{% endif %}<!--
           -->{% endfor %}
         </span>
@@ -14,3 +15,4 @@
     </div>
   </div>
 </header>
+<div class="nav-spacing"></div>

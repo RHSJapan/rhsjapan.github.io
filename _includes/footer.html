@@ -1,7 +1,15 @@
-<footer class="container site-footer">
-  <div class="row">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <p>{{ site.description }}</p>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="four columns">
+        {% include logo.html %}
+      </div>
+      <div class="eight columns">
+        <p>{{ site.description }} <a href="/about/">Learn More</a>.</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="text-center">Copyright &copy; 2016 <a href="{{ site.baseurl }}/">{{ site.title }}</a>. All rights reserved. Shoot us an email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </div>
   </div>
 </footer>
