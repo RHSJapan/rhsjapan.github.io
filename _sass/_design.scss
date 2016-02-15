@@ -197,6 +197,7 @@ body{color:#393d40;}
     }
 }
 .hero-japan{background: url($cdn + "/images/hero/japan.jpg");height:88rem;}
+.hero-404{background: url($cdn + "/images/hero/404.jpg");height:88rem;}
 .hero-about{background: url($cdn + "/images/hero/about.jpg");height:30rem;}
 
 .hero {
@@ -234,8 +235,23 @@ body{color:#393d40;}
     background-size:cover;
     position:relative;
     margin-bottom: 2rem;
-    &.hero-japan, &.hero-blur {
+    &.hero-japan, &.hero-blur, &.hero-404 {
         margin-bottom: 0;
+        &:not(.hero-blur) {
+            .cta {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+    &.hero-japan {
+        header {
+            top: 45%;
+        }
+    }
+    &.hero-404 {
+        header {
+            top: 40%;
+        }
     }
     .cta {
         display: inline-block;
@@ -253,6 +269,14 @@ body{color:#393d40;}
         &:hover {
             background: rgba(darken($cPrimary, 5%), 0.5);
         }
+    }
+    .bottom {
+        position: absolute;
+        bottom: 2rem;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
     }
     header {
         position:absolute;
