@@ -30,7 +30,27 @@ layout: default
 	<section class="about-the-author">
 		<div class="container">
 			<div class="row">
-				<h4>About The Author</h4>
+				{% assign authorCount = page.authors | size %}
+				{% if authorCount == 0 %}
+					<p>Uh oh, that's a no-go. Looks like someone forgot to add an author to this post.</p>
+				{% else %}
+					<h4>About The Author{% if authorCount > 1 %}s{% endif %}</h4>
+					{% comment %} <!-- We assign doReverse to be true here since it is more logical to begin --> {% endcomment %}
+					{% comment %} <!-- the authors directly below the left-aligned header from the left section. --> {% endcomment %}
+					{% assign doReverse = true %}
+					{% for author in page.authors %}
+					
+						{% assign n = site.data.officers[author] %}
+						{% include officer.html o=n %}
+						
+						{% if doReverse == true %}
+							{% assign doReverse = false %}
+						{% else %}
+							{% assign doReverse = true %}
+						{% endif %}
+						
+					{% endfor %}
+				{% endif %}
 			</div>
 		</div>
 	</section>

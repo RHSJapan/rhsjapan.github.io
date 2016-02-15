@@ -1,9 +1,9 @@
-<div id="{{ include.o.short }}" class="row{% if doReverse == true %} reverse{% endif %}">
+<div {% if page.isOfficersPage %}id="{{ include.o.short }}"{% endif %} class="row{% if doReverse == true %} reverse{% endif %}">
 	{% if doReverse == true %}
 	    {% include officer_image.html o = include.o %}
 	{% endif %}
 	<div class="{{ include.o.size[0] }} columns">
-		<h4><a class="anchor" href="#{{ include.o.short }}">{{ include.o.name }}</a></h4>
+		<h4><a {% if page.isOfficersPage %}class="anchor" href="#{{ include.o.short }}"{% else %}href="/officers/#{{ include.o.short }}"{% endif %}>{{ include.o.name }}</a></h4>
 		{% comment %} <!-- We have to use [0] and [1] here because the officers.yml holds an array of positions, the first being a key/value pair --> {% endcomment %}
 		{% for position in include.o.active %}
 			{% if position[0] == site.school_year %}

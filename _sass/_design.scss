@@ -12,6 +12,7 @@ a {
         color: lighten($cPrimary, 30%);
     }
 }
+img{max-width:100%;}
 .container {
     a {
         text-decoration: none;
@@ -25,14 +26,12 @@ blockquote{font-style:italic}
     img {
         display: block;
         margin: 0 auto;
-        max-width: 100%;
     }
 }
 
 /************** Page-Specific Styles **************/
 // Officers Page
 .officers {
-    img{max-width:100%;}
     .container{margin-bottom:2rem;}
     // Autoprefix CSS to make sure that older browsers
     // can at least try to support flexbox!

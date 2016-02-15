@@ -2,7 +2,7 @@
 layout: post
 title:  "And We're Live!"
 date:   2016-02-12 09:28:54 -0500
-author: Donovan Glover
+authors: [donovan_glover]
 categories: news
 ---
 

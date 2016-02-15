@@ -2,6 +2,7 @@
 layout: page
 title: Officers
 permalink: /officers/
+isOfficersPage: true
 ---
 <section class="officers">
 	<section class="hero hero-office">
@@ -12,21 +13,7 @@ permalink: /officers/
 		{% include scroll.html %}
 	</section>
 	<div class="container">
-		{% assign doReverse = false %}
-		{% for officer in site.data.officers %}
-			{% comment %} <!-- The [1] is required here because we're looking at the *value* of each officer, not his or her key. --> {% endcomment %}
-			{% comment %} <!-- The local variable is required because Jekyll does not like directly assigning o to an array value. --> {% endcomment %}
-			
-			{% assign n = officer[1] %}
-			{% include officer.html o=n %}
-			
-			{% comment %} <!-- We're done with the doReverse variable here, so lets switch it for the next loop. Note that Jekyll does not support this natively. --> {% endcomment %}
-			{% if doReverse == true %}
-				{% assign doReverse = false %}
-			{% else %}
-				{% assign doReverse = true %}
-			{% endif %}
-		{% endfor %}
+		{% include officers.html officers=site.data.officers %}
 	</div>
 	<section class="hero hero-blur">
 		<header>

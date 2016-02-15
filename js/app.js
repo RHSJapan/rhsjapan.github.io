@@ -32,6 +32,35 @@
 
 })(window, document);
 
+// Handle an edge-case where the user isn't on the officers page and s/he tries
+// to click on an achor tag linking to someone else's section on the officers page.
+;(function(window, document, undefined) {
+	"use strict";
+	
+	var about = document.getElementsByClassName("about-the-author");
+	if(about[0]) {
+		
+		var aboutTheAuthor = about[0].getElementsByTagName("p");
+		
+		if(aboutTheAuthor && !(window.location.href.indexOf("/officers/") > -1)) {
+			for(var i = 0; i < aboutTheAuthor.length; i++) {
+				var x = aboutTheAuthor[i].getElementsByTagName("a");
+				if(x.length > 0) {
+					for(var j = 0; j < x.length; j++) {
+						var y = x[j].href;
+						if(y.indexOf("#") > -1) {
+							x[j].href = "/officers/" + y.substring(y.indexOf("#"));
+							x[j].className = "";
+						}
+					}
+				}
+			}
+		}
+	}
+	
+})(window, document);
+
+
 ;(function(window, document, undefined) {
 	"use strict";
 	// http://stackoverflow.com/questions/8917921/
