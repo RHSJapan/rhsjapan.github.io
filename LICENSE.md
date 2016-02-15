@@ -1,4 +1,4 @@
-Copyright (C) 2016 [RHS Japan Club](https://rhsjapan.com/)
+Copyright (C) 2016 [RHS Japan Club](https://rhsjapan.com/).
 
 The SVG icons used on the website are provided by [flaticon](http://www.flaticon.com/). "Noodles In a Bowl" and "Go Game" are provided by [Freepik](http://www.freepik.com/). "Yin yang" is provided by [TutsPlus](http://tutsplus.com/).
 
