@@ -1,15 +1,37 @@
 ---
 layout: default
 ---
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header row">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content row" itemprop="articleBody">
-    {{ content }}
-  </div>
-
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<section class="hero hero-office">
+		<header class="post-header">
+			<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+			<h2>Random subtitle just to look cool!</h2>
+		</header>
+		{% include scroll.html %}
+	</section>
+	<div class="container">
+	  <div class="row">
+		<div class="post-content nine columns" itemprop="articleBody">
+			<h1>{{page.title}}</h1>
+			{{ content }}
+		</div>
+		<aside class="three columns">
+			<ul class="post-meta">
+				<li>
+					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+				</li>
+				{% if page.author %}<li>
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+				</li>{% endif %}
+			</ul>
+		</aside>
+	  </div>
+	</div>
+	<section class="about-the-author">
+		<div class="container">
+			<div class="row">
+				<h4>About The Author</h4>
+			</div>
+		</div>
+	</section>
 </article>
