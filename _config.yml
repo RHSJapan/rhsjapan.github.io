@@ -9,5 +9,5 @@ permalink: "/:title/"
 baseurl: ""
 url: "https://rhsjapan.com"
 cdn: "https://cdn.rhsjapan.com"
-
+timezone: America/New_York
 markdown: kramdown
