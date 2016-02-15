@@ -1,0 +1,62 @@
+elizabeth_sobel:
+    name: 'Elizabeth Sobel'
+    short: 'elizabeth'
+    size: ['eight', 'four']
+    active:
+        - [school_year, role]
+        - [2014, 'Vice President']
+        - [2015, 'Co-President']
+    desc_primary: 'Very enthusiastic about Japan, Elizabeth has been taking Japanese as her language for 3 years and was Vice President to the previous leader of the Japan Club. She oversees meetings and planning alongside <a class="anchor" href="#lanai">Lanai</a>.'
+    desc_secondary: 'Elizabeth is not only an aspiring leader, but also a dedicated artist. She has experience with traditional as well as digital design and enjoys studying Japanese animation.'
+
+# Note to self: Populate Lanai's description with meaningful content.
+lanai_huddleston:
+    name: 'Lanai Huddleston'
+    short: 'lanai'
+    size: ['eight', 'four']
+    active:
+        - [school_year, role]
+        - [2015, 'Co-President']
+    desc_primary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dolor, accusamus eos accusantium aliquam at iste praesentium dolore fuga natus alias, magnam officiis reiciendis, quasi esse dicta id. Impedit, cumque?'
+    desc_secondary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quae deleniti cupiditate dolore, est possimus porro. Ab necessitatibus cumque optio deserunt veritatis ducimus, obcaecati maiores architecto assumenda, ipsam quaerat officia?'
+
+heather_zhu:
+    name: 'Heather Zhu'
+    short: 'heather'
+    size: ['seven', 'five']
+    active:
+        - [school_year, role]
+        - [2015, 'Treasurer']
+    desc_primary: 'Heather is a sophomore that currently presides as treasurer of the Japan Club. She has been with the club since the start of her high school career.'
+    desc_secondary: 'Although Heather seems light-hearted and polite at first, she is actually a demon-spawn that is constantly exhausted from the consistent flow of soul-sucking work pressed down onto her by her satanic teachers. She also enjoys reading and cultural learning in the minimal free time that she has.'
+
+asuka_hayashi:
+    name: 'Asuka Hayashi'
+    short: 'asuka'
+    size: ['seven', 'five']
+    active:
+        - [school_year, role]
+        - [2015, 'Secretary']
+    desc_primary: "My parents didn't know what to name me and went to a priest for guidance. \"Asuka Hayashi\", the priest said. In Japanese this would be 飛鳥 and the characters mean flying bird."
+    desc_secondary: "My name is also an era in Japanese history and when I'd go to a new school they would remember my name by calling me Hayashi rice, similar to curry rice, from the Asuka era. I joined Japan Club because I love the culture there."
+
+# Note to self: Populate Noah's description with meaningful content.
+noah_greene:
+    name: 'Noah Greene'
+    short: 'noah'
+    size: ['seven', 'five']
+    active:
+        - [school_year, role]
+        - [2015, 'Public Relations / Video Production']
+    desc_primary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dignissimos totam maxime. Vel praesentium voluptatem, velit, officiis consequatur harum possimus iusto excepturi quos eveniet aliquam ut delectus quo fugiat, aperiam.'
+    desc_secondary: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facilis a, optio ab eveniet laudantium, vel ad veritatis laborum ratione possimus.'
+
+donovan_glover:
+    name: 'Donovan Glover'
+    short: 'donovan'
+    size: ['eight', 'four']
+    active:
+        - [school_year, role]
+        - [2015, 'Public Relations / Lead Web Developer']
+    desc_primary: 'Donovan is a self-taught programmer and web developer that has been involved in web development for over eight years. He loves solving problems and likes to discover new things.'
+    desc_secondary: 'Although Donovan knows more French than Japanese, he still enjoys listening to Japanese music and observing Japanese culture and animation. While his major will be in STEM, Donovan also wants to improve his drawing and design skills.'
