@@ -1,11 +1,40 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="row">
-    {% for post in site.posts %}
-      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-    {% endfor %}
+<section class="home">
+  <section class="hero hero-japan">
+    <header>
+      <h1>Discover Japanese Culture</h1>
+      <h2>Through food, games, and more!</h2>
+      <a href="/next/" class="cta">Join the next meeting</a>
+    </header>
+    {% include scroll.html %}
+  </section>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row center-each">
+        <div class="four columns">
+          <object type="image/svg+xml" data="{{ site.cdn }}/images/svg/b.svg"></object>
+          <h5>Japanese Games</h5>
+          <p>Tired of traditional American games? We supply hard-to-find Japanese games at the Japan Club.</p>
+        </div>
+        <div class="four columns">
+          <object type="image/svg+xml" data="{{ site.cdn }}/images/svg/a.svg"></object>
+          <h5>Free Food*</h5>
+          <p>Enjoy some of the most exotic Japanese foods in Japan Club as we breach out into the various eating styles of Japan.</p>
+        </div>
+        <div class="four columns">
+          <object type="image/svg+xml" data="{{ site.cdn }}/images/svg/c.svg"></object>
+          <h5>Cultural Understanding</h5>
+          <p>Did you ever learn about Japan in a history class but don't know what it is exactly? <a href="/next/">Start learning now</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  <section class="hero hero-blur">
+    <header>
+      <h2>Well, what are you waiting for?</h2>
+      <a href="/next/" class="cta">Join the next meeting</a>
+    </header>
+  </section>
+</section>
