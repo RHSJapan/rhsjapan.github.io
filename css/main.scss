@@ -9,5 +9,7 @@
     }
 }
 
+$cdn: "{{site.cdn}}";
+
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "normalize", "skeleton", "animate", "crayon", "design";
+@import "normalize", "skeleton", "animate", "design";
