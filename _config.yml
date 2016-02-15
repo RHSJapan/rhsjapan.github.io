@@ -8,5 +8,6 @@ short: Immerse yourself in Japanese culture
 permalink: "/:title/"
 baseurl: ""
 url: "https://rhsjapan.com"
+cdn: "https://cdn.rhsjapan.com"
 
 markdown: kramdown
