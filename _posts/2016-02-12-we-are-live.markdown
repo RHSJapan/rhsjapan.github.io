@@ -44,7 +44,7 @@ For office members and other contributors, if you wish to add something to this 
 
 #### GitHub Pages &amp; Cloudflare
 
-<img alt="Cloudflare." src="{{ site.cdn }}/images/blog/cloudflare.png" style="width:20rem;">
+<img alt="Cloudflare." src="{{ site.cdn }}/images/blog/cloudflare.png" style="width:30rem;">
 
 Did I mention that this site runs on [GitHub Pages](https://pages.github.com/)? Well, it does, and by using GitHub Pages, we can ensure that the website will be available most (if not all) of the time. As an additional layer of protection, we've integrated the [Cloudflare](https://www.cloudflare.com/) infrastructure with our website, allowing us to not only increase the security of the website overall, but also monitor certain events.
 
