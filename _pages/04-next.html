@@ -27,34 +27,12 @@ cta: true
 					</tr>
 				</thead>
 				<tbody>
+					{% for meeting in site.data.meetings %}
 					<tr>
-						<td>January 21st, 2016</td>
-						<td>In this meeting, we played Japanese games among other things!</td>
+						<td>{{ meeting[0] }}</td>
+						<td>{{ meeting[1] }}</td>
 					</tr>
-					<tr>
-						<td>December 10th, 2015</td>
-						<td>Christmas Party! In this meeting, we ate a lot of Japanese food and watched part of a Christmas anime movie.</td>
-					</tr>
-					<tr>
-						<td>November 19th, 2015</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>November 5th, 2015</td>
-						<td>During this meeting, we tried out an extensive amount of Japanese foods and played Japanese games in the process.</td>
-					</tr>
-					<tr>
-						<td>October 22nd, 2015</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>October 8th, 2015</td>
-						<td>In this meeting, we made drawings and voted on the 2015-2016 Japan Club t-shirt design.</td>
-					</tr>
-					<tr>
-						<td>September 24th, 2015</td>
-						<td>In this meeting, we determined who would be officers for the year and discussed the future of the Japan club.</td>
-					</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</div>
