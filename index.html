@@ -13,6 +13,38 @@ layout: default
   <div class="wrapper">
     <div class="container">
       <div class="row center-each">
+        <div class="six columns">
+          <h5>Testing testing 123</h5>
+        </div>
+        <div class="six columns">
+          <h5>This is another h5 tag</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="about-the-author">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Meet the Presidents</h2>
+        {% comment %} <!-- There's probably a way to go through each of the officers and only include them if they have a president position (indexof > -1). --> {% endcomment %}
+        {% assign pres1 = site.data.officers.lanai_huddleston %}
+        {% assign doReverse = true %}
+        {% include officer.html o=pres1 %}
+        
+        {% assign pres2 = site.data.officers.elizabeth_sobel %}
+        {% assign doReverse = false %}
+        {% include officer.html o=pres2 %}
+      </div>
+    </div>
+  </section>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row no-padding-bottom">
+        <div class="twelve columns">
+          <h2 class="text-center no-margin">Why Japan Club?</h2>
+        </div>
+      </div>
+      <div class="row center-each">
         <div class="four columns">
           <object type="image/svg+xml" data="{{ site.cdn }}/images/svg/b.svg"></object>
           <h5>Japanese Games</h5>
