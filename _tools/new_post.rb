@@ -27,7 +27,7 @@ layout = gets.chomp
 print "#{layout} layout it is! Now what shall I title this post?: "
 title = gets.chomp
 
-print "Finally, what category is this under?: "
+print "Finally, what category is this under?: ru"
 category = gets.chomp
 
 puts "Awesome! Right now, you currently are saying that the layout is #{layout},
