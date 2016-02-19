@@ -14,20 +14,20 @@ def gatekeeper *values
     user_input
 end
 
-puts "Hello! This program is going to guide you through the creation of a
+print "Hello! This program is going to guide you through the creation of a
 new post for RHS Japan Club. Please keep in mind not to add
 any unnecessary quotation marks when using this software- just straightaway
-tell me what to use. First, could you tell the author name to use?"
+tell me what to use. First, could you tell the author name to use?: "
 author = gets.chomp
 
-puts "Excellent, #{author}. Now, what layout will this blog post be in? Hint:
-It's likely in 'post' format."
+print "Excellent, #{author}. Now, what layout will this blog post be in? Hint:
+It's likely in 'post' format.: "
 layout = gets.chomp
 
-puts "#{layout} layout it is! Now what shall I title this post?"
+print "#{layout} layout it is! Now what shall I title this post?: "
 title = gets.chomp
 
-puts "Finally, what category is this under?"
+print "Finally, what category is this under?: ru"
 category = gets.chomp
 
 puts "Awesome! Right now, you currently are saying that the layout is #{layout},
