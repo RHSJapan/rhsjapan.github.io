@@ -113,6 +113,17 @@ body{color:#393d40;}
         // Fix positioning in nav bar
         margin-top: -1.75rem;
     }
+    
+    // For mobile devices, only show the logo
+    @media screen and (max-width: 80rem) {
+        .u-pull-right {
+            display: none;
+        }
+        .site-nav {
+            width: 100%;
+            text-align: center;
+        }
+    }
 
 }
 
@@ -144,6 +155,18 @@ body{color:#393d40;}
     }
     .columns:first-of-type {
         border-right: 0.1rem solid #666;
+        @media screen and (max-width: 54.9rem) {
+            border-right: none;
+        }
+        @media screen and (max-width: 80rem) {
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+    }
+    .row:first-of-type {
+        @media screen and (max-width: 80rem) {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -274,10 +297,20 @@ body{color:#393d40;}
         }
         h1 {
             font-size: 6rem;
+            @media screen and (max-width: 54.9rem) {
+                font-size: 5rem;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+            }
             -webkit-text-stroke: 0.15rem black;
         }
         h2 {
             font-size: 4rem;
+            @media screen and (max-width: 54.9rem) {
+                font-size: 3rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
             -webkit-text-stroke: 0.05rem black;
         }
     }
@@ -311,6 +344,14 @@ body{color:#393d40;}
             }
         }
     }
+    @media screen and (max-width: 80rem) {
+        &.hero-blur {
+            // Border hack to get absolute positioning with padding to work
+            // Ref: http://stackoverflow.com/questions/17115344/
+            border-left: 2rem solid transparent;
+            border-right: 2rem solid transparent;
+        }
+    }
 }
 
 // Site logo
@@ -319,7 +360,6 @@ body{color:#393d40;}
     outline: none;
     text-decoration: none;
     position: relative;
-    font-size: 4rem;
     line-height: 1;
     color: #333;
     display: inline-block;
@@ -365,11 +405,20 @@ body{color:#393d40;}
             transform: translate3d(-0.5rem,0.5rem,0);
         }
     }
+    
+    // Optimize logo for smaller devices
+    @media screen and (max-width: 54.9rem) {
+        span {
+            bottom: 0.5rem;
+        }
+        
+        margin: 0 auto;
+    }
 }
 // Handle the switching of columns for smaller viewports of officers
 // Autoprefix CSS to make sure that older browsers
 // can at least try to support flexbox!
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 54.9rem) {
     .reverse {
         display: -webkit-box;
         display: -webkit-flex;
@@ -394,5 +443,18 @@ body{color:#393d40;}
             -ms-flex-order: 1;
             order: 1;
         }
+    }
+}
+
+// Change the hero image size based on the window size
+@media screen and (max-width: 54.9rem) {
+    .hero-japan {
+        height: 55rem;
+    }
+    .site-header .row {
+        padding: 0.5rem;
+    }
+    .nav-spacing {
+        padding-bottom: 5.5rem;
     }
 }
