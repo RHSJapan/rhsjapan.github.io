@@ -5,11 +5,11 @@
         {% include logo.html %}
         <span class="u-pull-right">
           {% assign sorted_pages = site.pages | sort:"name" %}
-          {% for my_page in sorted_pages %}<!--
-            -->{% if my_page.title %}<!--
-            --><a href="{{ my_page.url | prepend: site.baseurl }}" {% if my_page.cta %}class = "cta"{% endif %}>{{ my_page.title }}</a><!--
-            -->{% endif %}<!--
-          -->{% endfor %}
+          {% for my_page in sorted_pages %}{% comment %}<!--
+            -->{% endcomment %}{% if my_page.title %}{% comment %}<!--
+            -->{% endcomment %}<a href="{{ my_page.url | prepend: site.baseurl }}" {% if my_page.cta %}class = "cta"{% endif %}>{{ my_page.title }}</a>{% comment %}<!--
+            -->{% endcomment %}{% endif %}{% comment %}<!--
+          -->{% endcomment %}{% endfor %}
         </span>
       </nav>
     </div>
