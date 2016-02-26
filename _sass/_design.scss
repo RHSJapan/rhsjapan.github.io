@@ -6,7 +6,7 @@ $cBack: #333;
 
 a {
     color:$cPrimary;
-    transition: all 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     &:hover {
         color: lighten($cPrimary, 30%);
